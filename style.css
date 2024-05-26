@@ -1,22 +1,26 @@
-body{
+body {
     margin: 0px;
     padding: 0px;
 }
-.container{
+
+.container {
     min-height: 100vh;
     display: flex;
 }
-.sidebar{
+
+.sidebar {
     background-color: #262626;
     width: 300px;
-    height: 1005vh;
+    height: 100vh;
     color: #fff;
-    
+
 }
-.content{
+
+.content {
     width: 100%;
 }
-.bar{
+
+.bar {
     width: 220px;
     height: 25px;
     border: 1px solid black;
@@ -28,14 +32,16 @@ body{
 
 }
 
-::placeholder{
+::placeholder {
     color: #fff;
 }
-.img{
+
+.img {
     height: 30px;
     width: 50px;
 }
-.menu{
+
+.menu {
     background-color: white;
     width: 220px;
     height: 30px;
@@ -43,11 +49,56 @@ body{
     margin-bottom: 10px;
     cursor: pointer;
 }
-.menu:hover{
-    background-color:  #b3d1ff;
+
+.menu:hover {
+    background-color: #b3d1ff;
 }
-.font{
+
+.font {
     color: black;
     font-size: 25px;
     margin-left: 10px;
 }
+
+.dash {
+    font-size: 25px;
+    margin-left: 10px
+}
+.bottomnavbar{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 80px;
+    width: 100%;
+    background-color: #262626;
+    color: #fff;
+    display: none;
+    
+}
+.bottomimg{
+    height: 30px;
+    width: 50px;
+    margin-top: 10px;
+    margin-left: 8px;
+    border-radius: 5px;
+    padding:8px;
+    background-color: #fff;
+    cursor: pointer;
+}
+.bottomimg:hover{
+    background-color: #b3d1ff;
+}
+
+@media screen and (max-width:550px) {
+    .sidebar{
+        display: none;
+    }
+    .bottomnavbar{
+        display: block;
+    }
+
+}
+
+
+
+    
